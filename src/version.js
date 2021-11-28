@@ -1,31 +1,31 @@
 const version = (prefix, pushname) => {
     return `
-*ShanBot by shanduy*
+*PutoBot by MCA*
 
-*Actualizado:* 02 de Noviembre del 2021
-*Versión actual:* 4.2
-*Ofrecida por:* shanduy™
+*Actualizado:* 28 de Noviembre del 2021
+*Versión actual:* 4.8
+*Ofrecida por:* MCA™
 
 
 *INFORME*
 
-Si no funciona el comando *play o *play2 checa el blog del bot y mira la version que poses 
-Ya que ire cambiando mi apikey de mi bot para que siga en funcionamiento
-Cambiare la apikey pasando un mes o si veo muchos atercados o robos
-Si vez a alguien que robo mi bot comunicate conmigo con el comando *creador
+Si no funciona el comando *play o *play2 comprueba la version del bot 
+.
+.
+.
 
 
-*COMO ACTUALIZAR EL BOT*
+**
 
-https://cutt.ly/dWp5uqE
-
-
-*SIGUEME EN INSTAGRAM 🥸🧉*
-
-https://www.instagram.com/thepavos
+.
 
 
-_*by shanduy*_
+**
+
+.
+
+
+_*by MCA*_
 `
 
 }
