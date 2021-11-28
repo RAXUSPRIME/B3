@@ -2,14 +2,13 @@ const shantera = (prefix, pushname) => {
     return `*Palabras especificas para que el bot interactue*
 
 
-Buenas_tardes
+Y esto
+Buenos dias
+Buenas tardes
+Gracias
+Buenas noches
 Hola
 Ola
-Buenas_noches
-Todo_bien
-Buenos_dias
-Gracias
-Y_esto
 
 
 _**_
