@@ -1,16 +1,16 @@
 const help = (prefix) => {
 	return `
 
-⌜ _*ShanBot by shanduy*_ ⌟  
+⌜ _*PutoBot by MCA*_ ⌟  
 
 ◉ *INFORMACION*
    ○ Comando: ⌜ ${prefix} ⌟
-   ○ Creador: shanduy™ 
-   ○ Como instalar el bot: https://www.youtube.com/watch?v=2LQSzEbpJ-M
-   ○ Instagram: https://www.instagram.com/thepavos
+   ○ Creador: MCA™ 
+   ○ Como instalar el bot: búscate la vida
+   ○ .
 
-◉ *COMUNICADO*
-La función *kick ya esta en funcionamiento
+◉ **
+..
 
 ◉ *PARA USAR EL BOT*
 Registrate con el comando ${prefix}daftar y tu nombre
