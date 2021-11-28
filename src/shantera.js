@@ -5,11 +5,11 @@ const shantera = (prefix, pushname) => {
 Buenas_tardes
 Hola
 Ola
-Buenas noches
-Todo bien
-Buenos dias
+Buenas_noches
+Todo_bien
+Buenos_dias
 Gracias
-Y esto?
+Y_esto?
 
 
 _**_
