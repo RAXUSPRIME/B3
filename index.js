@@ -1607,7 +1607,7 @@ break
                   }
 
 		if (budy.includes(`Buenas noches`)) {
-                  reply(`Buenas noches :(`)
+                  reply(`Buenas noches`)
                   }
 					
 		if (budy.includes(`Hola`)) {
