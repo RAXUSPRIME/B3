@@ -13,7 +13,7 @@ const help = (prefix) => {
 ..
 
 ◉ *PARA USAR EL BOT*
-Registrate con el comando ${prefix}daftar y tu nombre
+Lo dicho, búscate la vida
 
 ◉ *NUEVOS COMANDOS*
 ○ ${prefix}banmenu
@@ -21,9 +21,9 @@ Banear a personas el uso del bot
 ○ ${prefix}levelmenu
 Level para tus grupos
 ○ ${prefix}antimenu
-Su nombre lo dice todo (antilink)
+Menu para configurar antilinks de redes sociales
 ○ ${prefix}otak
-Monas chinas
+.
 ○ ${prefix}shantera
 Interactua con el bot
 
@@ -40,7 +40,7 @@ Comando de bienvenida solo grupos
 ◉ *RESUELVE TUS DUDAS*
   ║
   ╠ ○ ${prefix}creador
-  ╚ Dudas o problemas aqui
+  ╚ Si tienes dudas, me la pela
 
 ◉ *CREAR STICKERS*
   ║
@@ -94,7 +94,7 @@ Comando de bienvenida solo grupos
   ╠ ○ ${prefix}todos
   ╚ Nombra a todos los del grupo
 
-Para usar estas funciones el bot necesita admin
+Para usar estas funciones el bot necesita ser admin
   
 ◉ *NSWF* 
   ║
@@ -102,11 +102,7 @@ Para usar estas funciones el bot necesita admin
 
 Para activar los NSFW coloque el siguiente comando ${prefix}nsfw 1 y para desactivar los NSFW coloque ${prefix}nsfw 0
 
-
-No te olvides de seguirme en instagram flaco ;)
-
-
-_*by shanduy*_
+_*by MCA*_
 
 
 ⌜ *ごきげんよう :)* ⌟ 
