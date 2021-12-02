@@ -1593,8 +1593,8 @@ break
                   reply(`Esto es un grupo, no lo ves`)
                   }
 
-		if (budy.includes(`Buenos dias`)) {
-                  reply(`Buenos dias`)
+		if (budy.includes(`Buenos días`)) {
+                  reply(`Buenos días`)
                   }
 
 		if (budy.includes(`Buenas tardes`)) {
@@ -1604,7 +1604,19 @@ break
 		if (budy.includes(`Gracias`)) {
                   reply(`De nada`)
                   }
+			
+		if (budy.includes(`K tal`)) {
+                  reply(`Yo bien, en línea y con batería`)
+                  }
+					
+		if (budy.includes(`Klk`)) {
+                  reply(`Kelokeeeeeeee`)
+                  }
 
+		if (budy.includes(`Me aburro`)) {
+                  reply(`Si te aburres, lee un libro`)
+                  }					
+					
 		if (budy.includes(`Buenas noches`)) {
                   reply(`Buenas noches`)
                   }
