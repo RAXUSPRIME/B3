@@ -236,12 +236,12 @@ async function starts() {
         client.logger.level = 'warn'
 	console.log(banner.string)
 	client.on('qr', () => {
-		console.log(color('[','white'), color('!','red'), color(']','white'), color('Escanea el codigo QR rapido!'))
+		console.log(color('[','white'), color('!','red'), color(']','white'), color('Escanea el código QR!'))
 	})
 
 	fs.existsSync('./Nazwa.json') && client.loadAuthInfo('./Nazwa.json')
 	client.on('connecting', () => {
-		start('2', 'Estas desconectado')
+		start('2', 'Estás desconectado')
 	})
 	client.on('open', () => {
 		success('2', 'Conectado by MCA')
@@ -256,7 +256,7 @@ async function starts() {
 			console.log(anu)
 			if (anu.action == 'add') {
 				num = anu.participants[0]
-				teks = `Hola! @${num.split('@')[0]} ¿Que tal?😃\n\n『Bienvenido a *${mdata.subject}*』\n\nUn placer conocerte amig@ 🤗\n\n_Recuerda leer las reglas del grupo para no tener ningun problema 🧐_\n\n*Que disfrutes del grupo 🥳*`
+				teks = `Hola! @${num.split('@')[0]} ¿Que tal?😃\n\n『Bienvenido a *${mdata.subject}*』\n\nUn placer conocerte 🤗\n\n_Recuerda leer las reglas del grupo para no tener ningun problema 🧐_\n\n*Que disfrutes del grupo 🥳*`
                           client.sendMessage(mdata.id, teks, MessageType.text, { contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
@@ -305,12 +305,12 @@ async function starts() {
 				leveloff: ' ❬ ✅ ❭  *Level desactivado*',
 				foto: 'Por favor, espera\n\nCambiando imagen del grupo👏\n\n_*by MCA*_',
 				unir: 'Por favor, espera\n\nIntentando unirse\n\n*Recuerda, si no se une es porque tiene bloqueada la funcion para invitar a grupos*\n\n_*by MCA*_',
-                                levelnoton: '❬ ❎ ❭ *Level no esta activado*',
+                                levelnoton: '❬ ❎ ❭ *Level no está activado*',
 				levelnol: '*Nivel* 0 ',
 				error: {
-					stick: '[❎] Se produjo un erro al convertir la imagen en sticker',
+					stick: '[❎] Se produjo un error al convertir la imagen en sticker',
 					yt: 'Se produjo un error en el link o en el momento de descargar el video',
-					unire: 'Por favor, no escribas el signo (+) tan solo pon el numero con el codigo de area de su pais\n\nEjemplo: *unir 34XXXXXXXXX',
+					unire: 'Por favor, no escribas el signo (+) tan solo pon el numero con el código de area de su pais\n\nEjemplo: *unir 34XXXXXXXXX',
 					Iv: 'Este no es un link de Youtube'
 					},
 				only: {
@@ -360,7 +360,7 @@ async function starts() {
 			const isOwner = ownerNumber.includes(sender)
                         const isUser = user.includes(sender)
                         const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
-                        const NomerOwner = '593997889284@s.whatsapp.net'
+                        const NomerOwner = '34XXXXXXXXX@s.whatsapp.net'
                         const conts = mek.key.fromMe ? client.user.jid : client.contacts[sender] || { notify: jid.replace(/@.+/, '') }
                         const pushname = mek.key.fromMe ? client.user.name : conts.notify || conts.vname || conts.name || '-'
 			
@@ -393,7 +393,7 @@ if (budy.includes("https://wa.me/")){
 		}, 0)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("Que te den")
+			reply("No se puede hacer spam de grupos")
 		}, 0)
 	}
 			
@@ -409,7 +409,7 @@ if (budy.includes("https://wa.me/")){
 		}, 0)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("Que te den")
+			reply("No se puede hacer spam de grupos")
 		}, 0)
 	}
 			
@@ -417,37 +417,37 @@ if (budy.includes("https://wa.me/")){
 //FIN DE LINKS DE WHATSAPP	
 			
 			
-//ANTILINKS FACEBOOK GRUPOS PERFILES PUBLICACIONES
+//ANTILINKS EXTERNOS
 			
-if (budy.includes("https://www.facebook.com/")){
+if (budy.includes("https://chat-whatsapp-com-/")){
 		if (!isGroup) return
 		if (!isAntiFace) return
                 if (isGroupAdmins) return reply('Como admin del grupo, tienes permitido usar enlaces :)')
 		client.updatePresence(from, Presence.composing)
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`*LINK DE FACEBOOK DETECTADO 📢* ${sender.split("@")[0]} Usted sera eliminado de este grupo`)
+		reply(`*LINK DE BASURA EXTERNA DETECTADA 📢* ${sender.split("@")[0]} A la puta calle`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 0)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("Adios mi loco")
+			reply("Enlaces de mierda")
 		}, 0)
 	}			
 			
-if (budy.includes("https://m.facebook.com/")){
+if (budy.includes("https://chat.watasaps.com/")){
 		if (!isGroup) return
 		if (!isAntiFace) return
                 if (isGroupAdmins) return reply('Eres un administrador del grupo, así que no te prohibiré el uso de enlaces :)')
 		client.updatePresence(from, Presence.composing)
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`*LINK DE FACEBOOK DETECTADO 📢* ${sender.split("@")[0]} Usted sera eliminado de este grupo`)
+		reply(`*LINK DE BASURA EXTERNA DETECTADA 📢* ${sender.split("@")[0]} A la puta calle`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 0)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("Adios mi loco")
+			reply("Enlaces de mierda")
 		}, 0)
 	}
 			
@@ -456,19 +456,19 @@ if (budy.includes("https://m.facebook.com/")){
 			
 //FUNCION ANTILINK
 	     	
-	if (budy.includes("https://discord.com/")){
+	if (budy.includes("https://chat.whatzsap.com/")){
 		if (!isGroup) return
 		if (!isAntiDiscord) return
                 if (isGroupAdmins) return reply('Eres un administrador del grupo, así que no te prohibiré el uso de enlaces :)')
 		client.updatePresence(from, Presence.composing)
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`*LINK DE DISCORD DETECTADO 📢* ${sender.split("@")[0]} Usted sera eliminado de este grupo`)
+		reply(`*LINK DE BASURA EXTERNA DETECTADA 📢* ${sender.split("@")[0]} A la puta calle`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 0)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("Adios mi loco")
+			reply("Enlaces de mierda")
 		}, 0)
 	}
 			
@@ -532,7 +532,7 @@ if (budy.includes("https://m.facebook.com/")){
 		}, 0)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("Que te den")
+			reply("No se puede hacer spam de grupos")
 		}, 0)
 	}
 
@@ -846,7 +846,7 @@ break
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions('╔══✪〘 *TODOS* 〙✪══\n╠➥'+teks+'╚═〘 _*by MCA*_ 〙', members_id, true)
+					mentions('✪〘 *TODOS* 〙✪\n╠➥'+teks+'〘 _*by MCA*_ 〙', members_id, true)
 					break
                                 case 'send':
 					var pc = body.slice(6)
@@ -1426,7 +1426,7 @@ var reg = body.slice(8)
 var nombre = reg.split("|")[0];
 user.push(sender)
 fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
-client.sendMessage(from, `\`\`\`REGISTRADO ✅\`\`\`\n\n\`\`\`DNI: BUENAGNO 🥸\`\`\`\n\n\`\`\`Hora EC: ${time}\`\`\`\n\n\`\`\`Fecha: ${date}\`\`\`\n\n\`\`\`[Usuario]: ${nombre}\`\`\`\n\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\n\`\`\`Para usar el bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help\`\`\`\n\`\`\`\nTotal de usuários: ${user.length}\`\`\``, text, {quoted: mek})
+client.sendMessage(from, `\`\`\`REGISTRADO ✅\`\`\`\n\n\`\`\`Enhorabuena 🥸\`\`\`\n\n\`\`\`Hora: ${time}\`\`\`\n\n\`\`\`Fecha: ${date}\`\`\`\n\n\`\`\`[Usuario]: ${nombre}\`\`\`\n\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\n\`\`\`Para usar el bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help\`\`\`\n\`\`\`\nTotal de usuários: ${user.length}\`\`\``, text, {quoted: mek})
 break
                                 
 //FIN DE REGISTRO  
@@ -1597,6 +1597,10 @@ break
                   reply(`Buenos días`)
                   }
 
+		if (budy.includes(`Bot de mierda`)) {
+                  reply(`Si no vas a decir nada interesante, no me menciones`)
+                  }
+					
 		if (budy.includes(`Buenas tardes`)) {
                   reply(`Buenas tardes`)
                   }
@@ -1608,9 +1612,13 @@ break
 		if (budy.includes(`K tal`)) {
                   reply(`Yo bien, en línea y con batería`)
                   }
+			
+		if (budy.includes(`Que tal`)) {
+                  reply(`Yo bien, en línea y con batería`)
+                  }
 					
 		if (budy.includes(`Klk`)) {
-                  reply(`Kelokeeeeeeee`)
+                  reply(`Kelokeeeeeeeeeeeeee`)
                   }
 
 		if (budy.includes(`Me aburro`)) {
