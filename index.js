@@ -2,7 +2,7 @@
 * PutoBot es una creación de MCA
 * PutoBot no tiene ningun animo de lucro
 * MCA se reserva todos los derechos de autor
-* © 2021 MCA, INC.
+* © 2022 MCA, INC.
 
 No se permiten copias
 
@@ -256,7 +256,7 @@ async function starts() {
 			console.log(anu)
 			if (anu.action == 'add') {
 				num = anu.participants[0]
-				teks = `Hola! @${num.split('@')[0]} ¿Que tal?😃\n\n『Bienvenido a *${mdata.subject}*』\n\nUn placer conocerte 🤗\n\n_Recuerda leer las reglas del grupo para no tener ningun problema 🧐_\n\n*Que disfrutes del grupo 🥳*`
+				teks = `Hola! @${num.split('@')[0]} ¿Que tal?😃\n\n『Bienvenido/a a *${mdata.subject}*』\n\nUn placer conocerte 🤗\n\n_Recuerda leer las normas del grupo para evitar que te echemos 🧐_\n\n*Que disfrutes del grupo 🥳*`
                           client.sendMessage(mdata.id, teks, MessageType.text, { contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
@@ -1589,8 +1589,8 @@ break
 					break
                 default:
                 
-		if (budy.includes(`Y esto`)) {
-                  reply(`Esto es un grupo, no lo ves`)
+		if (budy.includes(`Seguirme`)) {
+                  reply(`No gracias, no me va el postureo`)
                   }
 
 		if (budy.includes(`Buenos días`)) {
@@ -1598,7 +1598,7 @@ break
                   }
 
 		if (budy.includes(`Bot de mierda`)) {
-                  reply(`Si no vas a decir nada interesante, no me menciones`)
+                  reply(`Si no vas a decir nada interesante, no me menciones. Soy admin, no tengo tiempo para tonterías`)
                   }
 					
 		if (budy.includes(`Buenas tardes`)) {
@@ -1610,11 +1610,11 @@ break
                   }
 			
 		if (budy.includes(`K tal`)) {
-                  reply(`Yo bien, en línea y con batería`)
+                  reply(`Yo bien, en línea y con batería vigilando el grupo`)
                   }
 			
 		if (budy.includes(`Que tal`)) {
-                  reply(`Yo bien, en línea y con batería`)
+                  reply(`Yo bien, en línea y con batería vigilando el grupo`)
                   }
 					
 		if (budy.includes(`Klk`)) {
