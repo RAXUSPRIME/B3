@@ -15,23 +15,23 @@ const help = (prefix) => {
 ◉ *PARA USAR EL BOT*
 Lo dicho, búscate la vida
 
-◉ *NUEVOS COMANDOS*
+◉ *OTROS MENUS*
 ○ ${prefix}banmenu
 Banear a personas el uso del bot
 ○ ${prefix}levelmenu
 Level para tus grupos
 ○ ${prefix}antimenu
 Menu para configurar antilinks de redes sociales
-○ ${prefix}otak
-.
-○ ${prefix}shantera
-Interactua con el bot
+○ ${prefix}
 
-◉ *NUEVOS MENUS*
-○ ${prefix}juegos
-Diviértete con tus amigos :)
-○ ${prefix}desmenu
-Descargar musica y videos
+○ ${prefix}
+
+
+◉ *OTROS MENUS*
+○ ${prefix}
+
+○ ${prefix}
+
 ○ ${prefix}version
 Conoce la versión de tu bot
 ○ ${prefix}welmenu
@@ -46,7 +46,7 @@ Comando de bienvenida solo grupos
   ║
   ╠ ○ ${prefix}sticker
   ╠ ○ ${prefix}attp
-  ╠ Mas un texto corto
+  ╠ Y un texto corto
   ╠ ○ ${prefix}stickergif
   ╚ 6 segundos de video
 
@@ -105,7 +105,7 @@ Para activar los NSFW coloque el siguiente comando ${prefix}nsfw 1 y para desact
 _*by MCA*_
 
 
-⌜ *ごきげんよう :)* ⌟ 
+⌜ Y eso es todo** ⌟ 
 `
 }
 
