@@ -256,11 +256,11 @@ async function starts() {
 			console.log(anu)
 			if (anu.action == 'add') {
 				num = anu.participants[0]
-				teks = `Hola! @${num.split('@')[0]} ¿Que tal?😃\n\n『Bienvenido/a a *${mdata.subject}*』\n\nUn placer conocerte 🤗\n\n_Recuerda leer las normas del grupo para evitar que te echemos 🧐_\n\n*Que disfrutes del grupo 🥳*`
+				teks = `Hola! @${num.split('@')[0]} ¿Que tal?😃\n\n『Te doy la bienvenida a  *${mdata.subject}*』\n\nUn placer tenerte en el grupo 🤗\n\n_Recuerda leer las normas para evitar que te eche por hacer el gilipollas 🧐_\n\n*Que disfrutes del grupo 🥳*`
                           client.sendMessage(mdata.id, teks, MessageType.text, { contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
-				teks = `A la calle @${num.split('@')[0]} 👋\n\nQue le den 😎`
+				teks = `Se fue @${num.split('@')[0]} 👋\n\nPues nada, la vida sigue 😎`
 				client.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}})
 			}
 		} catch (e) {
@@ -328,7 +328,7 @@ async function starts() {
 					insta: 'Por favor, espera 😎\n\n*Estoy descargando tu post 🔄*\n\nUn momento, por favor\n\n_*by MCA*_',
 					musica: 'Por favor, espera, estoy bucando tu canción 😎\n\n*Recuerda escribir bien el nombre de la cancion o el link del video de Youtube*\n\n*Si la funcion *play no funciona, utiliza el comando *play2*\n\nSi no envio tu cancion, comprueba que version tienes del bot con *version\n\n_*by MCA*_',
 					musica2: 'Por favor, espera, estoy bucando tu canción 😎\n\n*Recuerda escribir bien el nombre de la cancion o el link del video de Youtube*\n\n*Si el comando *play2 no funciona, utiliza el comando *play*\n\nSi no envio tu cancion, comprueba que version tienes del bot con *version\n\n_*by MCA*_',
-					daftarB: `「No estas registrado」\n\nNo apareces en mi base de datos ✋🥸🤚\n\nPara poder utilizarme escribe el siguente comando\n\nComando: ${prefix}daftar Nombre\nEjemplo: ${prefix}daftar MCA`,
+					daftarB: `「No estas registrado」\n\nNo apareces en mi base de datos ✋🥸🤚\n\nNo te pienses que cualquiera puede usar el bot\n\nComando: ${prefix}jajajaja Nombre\nEjemplo: ${prefix}jajajaja`,
 				}
 			}
     			const apakah = ['Si','No']
@@ -846,7 +846,7 @@ break
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions('✪〘 *TODOS* 〙✪\n╠➥'+teks+'〘 _*by MCA*_ 〙', members_id, true)
+					mentions('✪〘 *TODOS* 〙✪\n╠➥'+teks+'〘 _*cuanta gente*_ 〙', members_id, true)
 					break
                                 case 'send':
 					var pc = body.slice(6)
@@ -877,7 +877,7 @@ break
 						reply('')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `*「 _*by shanduy*_ 」*\n\n${body.slice(4)}`)
+							sendMess(_.jid, `*「 _*by MCA*_ 」*\n\n${body.slice(4)}`)
 						}
 						reply('Transmisión exitosa')
 					}
@@ -1618,11 +1618,11 @@ break
                   }
 					
 		if (budy.includes(`Klk`)) {
-                  reply(`Kelokeeeeeeeeeeeeee`)
+                  reply(`Kelokeeeeeeeeeeeeeeeeeeeeeeeeeay`)
                   }
 
 		if (budy.includes(`Me aburro`)) {
-                  reply(`Si te aburres, lee un libro`)
+                  reply(`Si te aburres, lee un libro o deja el móvil y vete a dar un paseo`)
                   }					
 					
 		if (budy.includes(`Buenas noches`)) {
