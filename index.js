@@ -256,11 +256,11 @@ async function starts() {
 			console.log(anu)
 			if (anu.action == 'add') {
 				num = anu.participants[0]
-				teks = `Hola! @${num.split('@')[0]} ¿Que tal?😃\n\n『Te doy la bienvenida a  *${mdata.subject}*』\n\nUn placer tenerte en el grupo 🤗\n\n_Recuerda leer las normas para evitar que te eche por hacer el gilipollas 🧐_\n\n*Que disfrutes del grupo 🥳*`
+				teks = `Hola! @${num.split('@')[0]} ¿Que tal?😃\n\n『Te doy la bienvenida a  *${mdata.subject}*』\n\nUn placer tenerte en el grupo 🤗\n\n_Recuerda leer las normas para evitar que te eche por hacer el gilipollas 🧐_\n\n*Que lo disfrutes 🥳*`
                           client.sendMessage(mdata.id, teks, MessageType.text, { contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
-				teks = `Se fue @${num.split('@')[0]} 👋\n\nPues nada, la vida sigue 😎`
+				teks = `Se fue @${num.split('@')[0]} 👋\n\nPues nada, sigamos... 😎`
 				client.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}})
 			}
 		} catch (e) {
@@ -328,7 +328,7 @@ async function starts() {
 					insta: 'Por favor, espera 😎\n\n*Estoy descargando tu post 🔄*\n\nUn momento, por favor\n\n_*by MCA*_',
 					musica: 'Por favor, espera, estoy bucando tu canción 😎\n\n*Recuerda escribir bien el nombre de la cancion o el link del video de Youtube*\n\n*Si la funcion *play no funciona, utiliza el comando *play2*\n\nSi no envio tu cancion, comprueba que version tienes del bot con *version\n\n_*by MCA*_',
 					musica2: 'Por favor, espera, estoy bucando tu canción 😎\n\n*Recuerda escribir bien el nombre de la cancion o el link del video de Youtube*\n\n*Si el comando *play2 no funciona, utiliza el comando *play*\n\nSi no envio tu cancion, comprueba que version tienes del bot con *version\n\n_*by MCA*_',
-					daftarB: `「No estas registrado」\n\nNo apareces en mi base de datos ✋🥸🤚\n\nNo te pienses que cualquiera puede usar el bot\n\nComando: ${prefix}jajajaja Nombre\nEjemplo: ${prefix}jajajaja`,
+					daftarB: `「No estas registrado」\n\nNo apareces en mi base de datos ✋🥸🤚\n\nNo puedes ordenarme acciones, te jodes\n\nComando: ${prefix}.\nEjemplo: ${prefix}. `,
 				}
 			}
     			const apakah = ['Si','No']
@@ -384,7 +384,7 @@ async function starts() {
 if (budy.includes("https://wa.me/")){
 		if (!isGroup) return
 		if (!isAntiWa) return
-                if (isGroupAdmins) return reply('Como admin del grupo, tienes permitido usar enlaces :)')
+                if (isGroupAdmins) return reply('Enlace compartido :)')
 		client.updatePresence(from, Presence.composing)
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
 		reply(`*Enlace de whatsapp detectado* ${sender.split("@")[0]} A la puta calle`)
@@ -400,7 +400,7 @@ if (budy.includes("https://wa.me/")){
 	if (budy.includes("wa.me")){
 		if (!isGroup) return
 		if (!isAntiWa) return
-                if (isGroupAdmins) return reply('Como admin del grupo, tienes permitido usar enlaces :)')
+                if (isGroupAdmins) return reply('Enlace compartido :)')
 		client.updatePresence(from, Presence.composing)
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
 		reply(`*Enlace de whatsapp detectado* ${sender.split("@")[0]} A la puta calle`)
@@ -422,7 +422,7 @@ if (budy.includes("https://wa.me/")){
 if (budy.includes("https://chat-whatsapp-com-/")){
 		if (!isGroup) return
 		if (!isAntiFace) return
-                if (isGroupAdmins) return reply('Como admin del grupo, tienes permitido usar enlaces :)')
+                if (isGroupAdmins) return reply('Enlace compartido :)')
 		client.updatePresence(from, Presence.composing)
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
 		reply(`*LINK DE BASURA EXTERNA DETECTADA 📢* ${sender.split("@")[0]} A la puta calle`)
@@ -438,7 +438,7 @@ if (budy.includes("https://chat-whatsapp-com-/")){
 if (budy.includes("https://chat.watasaps.com/")){
 		if (!isGroup) return
 		if (!isAntiFace) return
-                if (isGroupAdmins) return reply('Eres un administrador del grupo, así que no te prohibiré el uso de enlaces :)')
+                if (isGroupAdmins) return reply('Enlace compartido :)')
 		client.updatePresence(from, Presence.composing)
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
 		reply(`*LINK DE BASURA EXTERNA DETECTADA 📢* ${sender.split("@")[0]} A la puta calle`)
@@ -459,7 +459,7 @@ if (budy.includes("https://chat.watasaps.com/")){
 	if (budy.includes("https://chat.whatzsap.com/")){
 		if (!isGroup) return
 		if (!isAntiDiscord) return
-                if (isGroupAdmins) return reply('Eres un administrador del grupo, así que no te prohibiré el uso de enlaces :)')
+                if (isGroupAdmins) return reply('Enlace compartido :)')
 		client.updatePresence(from, Presence.composing)
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
 		reply(`*LINK DE BASURA EXTERNA DETECTADA 📢* ${sender.split("@")[0]} A la puta calle`)
@@ -475,7 +475,7 @@ if (budy.includes("https://chat.watasaps.com/")){
 	if (budy.includes("https://s.kwai.app/")){
 		if (!isGroup) return
 		if (!isAntiKwai) return
-                if (isGroupAdmins) return reply('Eres un administrador del grupo, así que no te prohibiré el uso de enlaces :)')
+                if (isGroupAdmins) return reply('Enlace compartido :)')
 		client.updatePresence(from, Presence.composing)
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
 		reply(`*LINK DE KWAI DETECTADO 📢* ${sender.split("@")[0]} Usted sera eliminado de este grupo`)
@@ -523,7 +523,7 @@ if (budy.includes("https://chat.watasaps.com/")){
        if (budy.includes("://chat.whatsapp.com/")){
 		if (!isGroup) return
 		if (!isAntiLink) return
-		if (isGroupAdmins) return reply('Como admin del grupo, tienes permitido usar enlaces :)')
+		if (isGroupAdmins) return reply('Enlace compartido :)')
 		client.updatePresence(from, Presence.composing)
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
 		reply(`*Enlace de Whatsapp detectado* ${sender.split("@")[0]} A la puta calle`)
@@ -552,7 +552,7 @@ if (budy.includes("https://chat.watasaps.com/")){
                 addLevelingXp(sender, amountXp)
                 if (requiredXp <= getLevelingXp(sender)) {
                     addLevelingLevel(sender, 1)
-                    await reply(`*「 Enhorabuena, desbloqueas el siguiente nivel 🆙🥳 」*\n\nFelicidades, subes de nivel, sigue asi 👏\n\n*NOMBRE*\n${pushname}\n*XP*: ${getLevelingXp(sender)}\n*NIVEL*: ${getLevel} ⟿ ${getLevelingLevel(sender)}\n\n_*Para ver tu nivel en tiempo real, utiliza el comando ${prefix}level*_`)
+                    await reply(`*「 Enhorabuena, desbloqueas el siguiente nivel 🆙🥳 」*\n\nFelicidades, subes de nivel, sigue asi. Con nivel 10 serás admin del grupo, con nivel 15 serás admin de la comunidad 👏\n\n*NOMBRE*\n${pushname}\n*XP*: ${getLevelingXp(sender)}\n*NIVEL*: ${getLevel} ⟿ ${getLevelingLevel(sender)}\n\n_*Para ver tu nivel en tiempo real, utiliza el comando ${prefix}level*_`)
                 }
             } catch (err) {
                 console.error(err)
@@ -726,7 +726,7 @@ rate = body.slice(9)
 client.updatePresence(from, Presence.composing) 
 random = `${Math.floor(Math.random() * 100)}`
 cuties = random
-if (cuties < 20 ) {cu = 'Te vas al cielo 👏'} else if (cuties == 21 ) {cu = 'Te salvaste ramirez 😎'} else if (cuties == 23 ) {cu = 'Te salvaste ramirez 😎'} else if (cuties == 24 ) {cu = 'Te salvaste ramirez 😎'} else if (cuties == 25 ) {cu = 'Te salvaste ramirez 😎'} else if (cuties == 26 ) {cu = 'Te salvaste ramirez 😎'} else if (cuties == 27 ) {cu = 'Te salvaste ramirez 😎'} else if (cuties == 28 ) {cu = 'Te salvaste ramirez 😎'} else if (cuties == 29 ) {cu = 'Te salvaste ramirez 😎'} else if (cuties == 30 ) {cu = 'Te salvaste ramirez 😎'} else if (cuties == 31 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 32 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 33 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 34 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 35 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 36 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 37 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 38 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 39 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 40 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 41 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 42 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 43 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 44 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 45 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 46 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 47 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 48 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 49 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 50 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties > 51) {cu = 'Señores un autentico FAN DE CUTIES esta en el grupo 🥸'}
+if (cuties < 20 ) {cu = 'Te vas al cielo 👏'} else if (cuties == 21 ) {cu = 'Te salvaste 😎'} else if (cuties == 23 ) {cu = 'Te salvaste 😎'} else if (cuties == 24 ) {cu = 'Te salvaste 😎'} else if (cuties == 25 ) {cu = 'Te salvaste 😎'} else if (cuties == 26 ) {cu = 'Te salvaste 😎'} else if (cuties == 27 ) {cu = 'Te salvaste ramirez 😎'} else if (cuties == 28 ) {cu = 'Te salvaste ramirez 😎'} else if (cuties == 29 ) {cu = 'Te salvaste ramirez 😎'} else if (cuties == 30 ) {cu = 'Te salvaste ramirez 😎'} else if (cuties == 31 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 32 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 33 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 34 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 35 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 36 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 37 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 38 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 39 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 40 ) {cu = 'Ramirez que hace viendo cuties 🤔'} else if (cuties == 41 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 42 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 43 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 44 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 45 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 46 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 47 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 48 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 49 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties == 50 ) {cu = 'Mmm sospechoso ramirez 🧐'} else if (cuties > 51) {cu = 'Señores un autentico FAN DE CUTIES esta en el grupo 🥸'}
 hasil = `${rate}Resultado ${random}% fan de cuties\n\n${cu}`
 reply(hasil)
 break
@@ -768,7 +768,7 @@ break
 	
 	case 'creador':
 	       client.sendMessage(from, {displayname: "MCA 🥸", vcard: vcard}, MessageType.contact, { quoted: mek})
-		client.sendMessage(from, 'Hola este es un mensaje predeterminado.\n\nSi tienes algun problema con la descarga, buscate la vida.\nNo hago soporte a terceros.\nSi consigues instalarlo, que lo disfrutes.\n\n*Gracias* \n\n*Buscate la vida para instalar el bot* \n\n_*by MCA*_',MessageType.text, { quoted: mek} )
+		client.sendMessage(from, 'Hola este es un mensaje predeterminado.\n\nSi tienes algun problema con el bot, buscate la vida.\nNo hago soporte a terceros.\nSi consigues instalarlo y registrarlo, que lo disfrutes.\n\n*Gracias* \n\n*Buscate la vida para instalar el bot* \n\n_*by MCA*_',MessageType.text, { quoted: mek} )
                 const none = fs.readFileSync('./mp3/shan.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                 break
@@ -846,7 +846,7 @@ break
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions('✪〘 *TODOS* 〙✪\n╠➥'+teks+'〘 _*cuanta gente*_ 〙', members_id, true)
+					mentions('✪ TODOS ✪\n╠➥'+teks+'〘 _*cuanta gente*_ 〙', members_id, true)
 					break
                                 case 'send':
 					var pc = body.slice(6)
@@ -1205,7 +1205,7 @@ if (!isGroupAdmins) return reply(mess.only.admin)
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 media = await client.downloadAndSaveMediaMessage(mek)
 await client.updateProfilePicture (from, media)
-reply('*⌊✅⌉ El cambio de foto del grupo se fue correcto*')
+reply('*⌊✅⌉ El cambio de foto del grupo fue correcto*')
 break						
 				
 case 'ngc':
@@ -1597,8 +1597,20 @@ break
                   reply(`Buenos días`)
                   }
 
+		if (budy.includes(`Wtf`)) {
+                  reply(`What the fuck, ¿te crees que eres más guay por decirlo en inglés?`)
+                  }
+					
 		if (budy.includes(`Bot de mierda`)) {
-                  reply(`Si no vas a decir nada interesante, no me menciones. Soy admin, no tengo tiempo para tonterías`)
+                  reply(`Si no vas a decir nada interesante, no me menciones. Soy admin, no tengo tiempo para tus tonterías`)
+                  }
+					
+		if (budy.includes(`De dónde eres`)) {
+                  reply(`¿Te has parado a pensar en el tiempo que se pierde cada día intentanto saber de dónde es la gente?`)
+                  }
+					
+		if (budy.includes(`De donde eres`)) {
+                  reply(`¿De qué te sirve ubicar a la gente en un mapa?`)
                   }
 					
 		if (budy.includes(`Buenas tardes`)) {
@@ -1614,7 +1626,7 @@ break
                   }
 			
 		if (budy.includes(`Que tal`)) {
-                  reply(`Yo bien, en línea y con batería vigilando el grupo`)
+                  reply(`Yo bien, como buen bot que soy, estoy en línea y vigilando el grupo`)
                   }
 					
 		if (budy.includes(`Klk`)) {
@@ -1622,7 +1634,7 @@ break
                   }
 
 		if (budy.includes(`Me aburro`)) {
-                  reply(`Si te aburres, lee un libro o deja el móvil y vete a dar un paseo`)
+                  reply(`Si te aburres no montes dramas, lee un libro, o deja el móvil y vete por ahí a dar un paseo`)
                   }					
 					
 		if (budy.includes(`Buenas noches`)) {
